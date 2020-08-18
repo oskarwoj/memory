@@ -82,7 +82,7 @@ img {
 
   img {
     height: 80px;
-    width: 70px;
+    width: 80px;
   }
 
   .game__card {
@@ -97,13 +97,13 @@ img {
 
 @media (max-width: 400px) {
   img {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
   }
 
   .game__card {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     margin: 2px;
   }
 
