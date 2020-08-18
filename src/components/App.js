@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { cards } from "./data";
 import Board from "./Board";
-import "./App.css";
+import { cards } from "./data";
+import { Main, Header, Button } from "./styled";
 
 export const cardsArray = [];
 export const cardsNumbers = 16;
@@ -23,20 +23,16 @@ const App = () => {
   };
 
   return (
-    <div className="main">
+    <Main>
       {!start ? (
-        <div className="main__startScreen">
-          <h1> Mario Memory</h1>
-          <button className="main__button" onClick={() => gameSetup()}>
-            START
-          </button>
-        </div>
-      ) : (
         <>
-          <Board></Board>
+          <Header> Mario Memory</Header>
+          <Button onClick={() => gameSetup()}>START</Button>
         </>
+      ) : (
+        <Board></Board>
       )}
-    </div>
+    </Main>
   );
 };
 

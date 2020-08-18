@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Display from "./Display";
 import { cardsArray } from "./App";
-import "./App.css";
 import ReactAudioPlayer from "react-audio-player";
 import useGame from "./useGame";
+import { Game, GameBoard, Card, GameBar, CardImage, Player } from "./styled";
 
 const Board = () => {
   const [gameStart, setGameStart] = useState(false);
@@ -22,44 +22,39 @@ const Board = () => {
   return (
     <>
       {win ? (
-        <div className="game">
-          <div className="game__bar">
+        <Game>
+          <GameBar>
             <Display
               timeValue={time}
               gameStart={gameStart}
               count={count}
             ></Display>
-          </div>
-          <div className="game__board">
+          </GameBar>
+          <GameBoard>
             {cardsArray.map((card, keys) => (
-              <div key={card.id} className="game__cardBox">
-                <div
-                  // className="game__card "
-                  className={`game__card ${visible[keys] ? "front" : ""}`}
-                  id={card.id}
-                  onClick={
-                    !visible[keys] && !noClick
-                      ? (event) => gamePlay(event)
-                      : null
-                  }
-                >
-                  {visible[keys] ? (
-                    <img src={card.img} alt="card"></img>
-                  ) : (
-                    // <img src={require("../images/bullet.png")} alt=""></img>
-                    ""
-                  )}
-                </div>
-              </div>
+              <Card
+                visible={visible[keys]}
+                id={card.id}
+                key={card.id}
+                onClick={
+                  !visible[keys] && !noClick ? (event) => gamePlay(event) : null
+                }
+              >
+                {visible[keys] && (
+                  <CardImage src={card.img} alt="card"></CardImage>
+                )}
+              </Card>
             ))}
-          </div>
-          <ReactAudioPlayer
-            className="musicPlayer"
-            src="./super_mario.mp3"
-            autoPlay
-            controls
-          />
-        </div>
+          </GameBoard>
+          <Player>
+            <ReactAudioPlayer
+              className="musicPlayer"
+              src="./super_mario.mp3"
+              autoPlay
+              controls
+            />
+          </Player>
+        </Game>
       ) : (
         <div>
           <h1>You win!</h1>
