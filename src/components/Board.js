@@ -31,12 +31,12 @@ const Board = () => {
             ></Display>
           </div>
           <div className="game__board">
-            {cardsArray.map((cards, keys) => (
-              <div key={cards.id} className="game__cardBox">
+            {cardsArray.map((card, keys) => (
+              <div key={card.id} className="game__cardBox">
                 <div
                   // className="game__card "
                   className={`game__card ${visible[keys] ? "front" : ""}`}
-                  id={cards.id}
+                  id={card.id}
                   onClick={
                     !visible[keys] && !noClick
                       ? (event) => gamePlay(event)
@@ -44,7 +44,7 @@ const Board = () => {
                   }
                 >
                   {visible[keys] ? (
-                    <img src={cards.img} alt=""></img>
+                    <img src={card.img} alt="card"></img>
                   ) : (
                     // <img src={require("../images/bullet.png")} alt=""></img>
                     ""

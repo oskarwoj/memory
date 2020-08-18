@@ -73,18 +73,21 @@ img {
 }
 
 @media (max-width: 550px) {
+  .main {
+    background-image: url(../images/ipad_small.png);
+  }
   h1 {
     font-size: 45px;
   }
 
   img {
-    height: 70px;
+    height: 80px;
     width: 70px;
   }
 
   .game__card {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
   }
 
   .game__bar {
@@ -92,15 +95,15 @@ img {
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 400px) {
   img {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
   }
 
   .game__card {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     margin: 2px;
   }
 
