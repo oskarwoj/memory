@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Board from "./Board";
 import { cards } from "./data";
-import { Main, Header, Button } from "./styled";
+import { Main, Header, Button, GlobalStyle } from "./styled";
 
 export const cardsArray = [];
 export const cardsNumbers = 16;
@@ -24,6 +24,7 @@ const App = () => {
 
   return (
     <Main>
+      <GlobalStyle />
       {!start ? (
         <>
           <Header> Mario Memory</Header>

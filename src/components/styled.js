@@ -1,7 +1,35 @@
 import styled, { css } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import background from "../images/ipad.png";
 import back from "../images/back.png";
-import background_small from "../images/ipad_small.png";
+import backgroundSmall from "../images/ipad_small.png";
+
+export const GlobalStyle = createGlobalStyle`
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+`;
 
 export const Main = styled.div`
   font-family: "Lato", sans-serif;
@@ -19,7 +47,7 @@ export const Main = styled.div`
   color: white;
 
   @media (max-width: 550px) {
-    background-image: url("${background_small}");
+    background-image: url("${backgroundSmall}");
     font-size: 45px;
   }
 `;
@@ -96,6 +124,7 @@ export const GameBar = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 35px;
+  padding: 0 30px;
 
   @media (max-width: 550px) {
     font-size: 25px;
@@ -112,8 +141,5 @@ export const CardImage = styled.img`
 `;
 
 export const Player = styled.div`
-  margin-top: 10px;
-  width: 200px;
-  height: 20px;
   align-self: center;
 `;

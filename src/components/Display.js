@@ -23,16 +23,15 @@ const Display = ({ gameStart, timeValue, count }) => {
 
   return (
     <>
-      <div className="round-time">
-        <div className="time-text">Play Time</div>
-        <div className="time-count">
+      <div>
+        <div>Play Time</div>
+        <div>
           {minutes}:{seconds}
         </div>
       </div>
-
-      <div className="round-count">
-        <div className="count-text">Count</div>
-        <div className="count">{count}</div>
+      <div>
+        <div>Count</div>
+        <div>{count}</div>
       </div>
     </>
   );

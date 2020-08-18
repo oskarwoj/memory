@@ -48,7 +48,7 @@ const Board = () => {
           </GameBoard>
           <Player>
             <ReactAudioPlayer
-              className="musicPlayer"
+              style={{ width: "180px", height: "20px" }}
               src="./super_mario.mp3"
               autoPlay
               controls
