@@ -34,7 +34,7 @@ code {
 export const Main = styled.div`
   font-family: "Lato", sans-serif;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 1000px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@ export const Header = styled.h1`
   font-size: 70px;
 
   @media (max-width: 550px) {
-    font-size: 45px;
+    font-size: 50px;
   }
 `;
 
@@ -66,6 +66,7 @@ export const Button = styled.button`
   font-size: 30px;
   color: white;
   transition: 0.5s;
+  box-shadow: 0 0 10px 0px white;
 
   &:hover {
     transform: scale(1.1);
@@ -83,6 +84,10 @@ export const GameBoard = styled.div`
   grid-template-rows: repeat(4, 1fr);
   margin-top: 12px;
   transform: rotateY(180deg);
+
+  @media (max-width: 550px) {
+    justify-items: center;
+  }
 `;
 
 export const Card = styled.div`
@@ -96,14 +101,16 @@ export const Card = styled.div`
   transition: all 0.2s linear;
 
   @media (max-width: 550px) {
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
+    margin: 5px 0;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     height: 70px;
     width: 70px;
-    margin: 2px;
+
+
   }
 
   ${({ visible }) =>
@@ -129,10 +136,6 @@ export const GameBar = styled.div`
   @media (max-width: 550px) {
     font-size: 25px;
   }
-
-  @media (max-width: 400px) {
-    font-size: 15px;
-  }
 `;
 
 export const CardImage = styled.img`
@@ -141,5 +144,6 @@ export const CardImage = styled.img`
 `;
 
 export const Player = styled.div`
+  margin-top: 15px;
   align-self: center;
 `;
