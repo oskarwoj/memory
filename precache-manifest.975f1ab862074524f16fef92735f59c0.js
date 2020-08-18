@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e6d52fb15bbb8edd6721ee9ce4618dd1",
+    "revision": "7d015b1769d71f25bf883334b7362f65",
     "url": "/memory/index.html"
   },
   {
-    "revision": "b05901b3597a7ccb5f58",
-    "url": "/memory/static/css/main.0e67d747.chunk.css"
+    "revision": "72bf38d76b38cd67ee69",
+    "url": "/memory/static/css/main.e5bf4d28.chunk.css"
   },
   {
     "revision": "c933e232b6d6919b9a03",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/memory/static/js/2.f99a1689.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b05901b3597a7ccb5f58",
-    "url": "/memory/static/js/main.0203e798.chunk.js"
+    "revision": "72bf38d76b38cd67ee69",
+    "url": "/memory/static/js/main.207bb923.chunk.js"
   },
   {
     "revision": "62e0eae13c9afaa66ed5",
@@ -30,5 +30,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b7cf87a36dfd4e67cf45f1fba24a1d0d",
     "url": "/memory/static/media/ipad.b7cf87a3.png"
+  },
+  {
+    "revision": "cebd02a720ba311ad1de1b5738d7363e",
+    "url": "/memory/static/media/ipad_small.cebd02a7.png"
   }
 ]);
