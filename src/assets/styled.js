@@ -65,7 +65,8 @@ export const Button = styled.button`
   border: 2px solid white;
   font-size: 30px;
   color: white;
-  transition: 0.5s;
+  /* transition: 0.5s 0.2s; */
+
   box-shadow: 0 0 10px 0px white;
 
   &:hover {
@@ -98,8 +99,8 @@ export const Card = styled.div`
   rotate: (180deg);
   background-size: cover;
   background-position: center;
-  transition: all 0.5s ;
-
+  transition: all 0.5s;
+  
   @media (max-width: 550px) {
     height: 100px;
     width: 100px;

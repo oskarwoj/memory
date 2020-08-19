@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Display from "./Display";
 import { cardsArray } from "./App";
 import ReactAudioPlayer from "react-audio-player";
 import useGame from "../hooks/useGame";
+import { IMGS } from "../utils/constants";
+import { preload } from "../utils/preload";
+import { URL } from "../utils/constants";
 import {
   Game,
   GameBoard,
@@ -13,13 +16,15 @@ import {
   WinBoard,
 } from "../assets/styled";
 
-import { URL } from "../utils/constants";
-
 const Board = () => {
   const [gameStart, setGameStart] = useState(false);
   const [time, setTime] = useState(null);
 
   const { win, visible, noClick, count, handleCardClick } = useGame();
+
+  useEffect(() => {
+    preload(IMGS);
+  });
 
   const gamePlay = (event) => {
     if (!gameStart) {
