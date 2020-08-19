@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Main, Header, Button, GlobalStyle } from "../assets/styled";
 import Board from "./Board";
-
-import { IMGS } from "../constants";
+import { IMGS } from "../utils/constants";
 import { preload } from "../utils/preload";
 import { setCards } from "../utils/setCards";
 

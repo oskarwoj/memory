@@ -1,5 +1,5 @@
 import { cards } from "../data/data";
-import { CARDSNUMBER } from "../constants";
+import { CARDSNUMBER } from "./constants";
 import { cardsArray } from "../components/App";
 
 export const setCards = () => {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { cardsArray } from "../components/App";
-import { CARDSNUMBER } from "../constants";
+import { CARDSNUMBER } from "../utils/constants";
 
 const visible = [null];
 const visibleId = [null, null];

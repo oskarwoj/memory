@@ -13,7 +13,7 @@ import {
   WinBoard,
 } from "../assets/styled";
 
-import { URL } from "../constants";
+import { URL } from "../utils/constants";
 
 const Board = () => {
   const [gameStart, setGameStart] = useState(false);
