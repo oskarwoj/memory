@@ -52,6 +52,7 @@ const Board = () => {
               src="https://raw.githubusercontent.com/oskarwoj/memory/master/src/music/super_mario.mp3"
               autoPlay
               controls
+              loop
             />
           </Player>
         </Game>
