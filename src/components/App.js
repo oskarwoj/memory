@@ -1,45 +1,22 @@
 import React, { useState, useEffect } from "react";
+import { Main, Header, Button, GlobalStyle } from "../assets/styled";
 import Board from "./Board";
-import { cards } from "./data";
-import { Main, Header, Button, GlobalStyle } from "./styled";
+
+import { IMGS, CARDSNUMBER } from "../constants";
+import { preload } from "../utils/preload";
+import { setCards } from "../utils/setCards";
 
 export const cardsArray = [];
-export const cardsNumbers = 16;
-
-const imgs = [
-  "https://github.com/oskarwoj/memory/blob/master/src/images/blue.png?raw=true",
-  "https://github.com/oskarwoj/memory/blob/master/src/images/bullet.png?raw=true",
-  "https://github.com/oskarwoj/memory/blob/master/src/images/coin.png?raw=true",
-  "https://github.com/oskarwoj/memory/blob/master/src/images/fish.png?raw=true",
-  "https://github.com/oskarwoj/memory/blob/master/src/images/flower.png?raw=true",
-  "https://github.com/oskarwoj/memory/blob/master/src/images/monster.png?raw=true",
-  "https://github.com/oskarwoj/memory/blob/master/src/images/owl.png?raw=true",
-];
 
 const App = () => {
   const [start, setStart] = useState(false);
 
   useEffect(() => {
-    cacheImages(imgs);
+    preload(IMGS);
   }, []);
 
-  const cacheImages = (srcArray) => {
-    srcArray.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
-  };
-
-  const gameSetup = () => {
-    const newCards = cards.slice(0, cardsNumbers);
-
-    for (let i = 0; i < cardsNumbers; i++) {
-      let random = Math.floor(Math.random() * newCards.length);
-
-      cardsArray.push(newCards[random]);
-      newCards.splice(random, 1);
-      cardsArray[i].id = i;
-    }
+  const gameStart = () => {
+    setCards();
     setStart(true);
   };
 
@@ -48,8 +25,8 @@ const App = () => {
       <GlobalStyle />
       {!start ? (
         <>
-          <Header> Mario Memory</Header>
-          <Button onClick={() => gameSetup()}>START</Button>
+          <Header>Mario Memory</Header>
+          <Button onClick={() => gameStart()}>START</Button>
         </>
       ) : (
         <Board></Board>

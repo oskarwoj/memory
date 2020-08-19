@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 import { createGlobalStyle } from "styled-components";
-import background from "../images/ipad.png";
-import back from "../images/back.png";
-import backgroundSmall from "../images/ipad_small.png";
+import background from "./images/ipad.png";
+import back from "./images/back.png";
+import backgroundSmall from "./images/ipad_small.png";
 
 export const GlobalStyle = createGlobalStyle`
 html {
@@ -98,7 +98,7 @@ export const Card = styled.div`
   rotate: (180deg);
   background-size: cover;
   background-position: center;
-  transition: all 0.4s ;
+  transition: all 0.5s ;
 
   @media (max-width: 550px) {
     height: 100px;

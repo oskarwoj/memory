@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Display from "./Display";
 import { cardsArray } from "./App";
 import ReactAudioPlayer from "react-audio-player";
-import useGame from "./useGame";
+import useGame from "../hooks/useGame";
 import {
   Game,
   GameBoard,
@@ -11,7 +11,9 @@ import {
   CardImage,
   Player,
   WinBoard,
-} from "./styled";
+} from "../assets/styled";
+
+import { URL } from "../constants";
 
 const Board = () => {
   const [gameStart, setGameStart] = useState(false);
@@ -57,7 +59,7 @@ const Board = () => {
           <Player>
             <ReactAudioPlayer
               style={{ width: "180px", height: "20px" }}
-              src="https://raw.githubusercontent.com/oskarwoj/memory/master/src/music/super_mario.mp3"
+              src={URL}
               autoPlay
               controls
               loop

@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import { cardsArray, cardsNumbers } from "./App";
+import { cardsArray } from "../components/App";
+import { CARDSNUMBER } from "../constants";
 
 const visible = [null];
 const visibleId = [null, null];
 
 const useGame = () => {
-  const winNumbers = Math.floor(cardsNumbers / 2);
+  const winNumbers = Math.floor(CARDSNUMBER / 2);
   // const winNumbers = 0;
 
   const [count, setCount] = useState(0);
