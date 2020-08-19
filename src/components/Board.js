@@ -3,7 +3,15 @@ import Display from "./Display";
 import { cardsArray } from "./App";
 import ReactAudioPlayer from "react-audio-player";
 import useGame from "./useGame";
-import { Game, GameBoard, Card, GameBar, CardImage, Player } from "./styled";
+import {
+  Game,
+  GameBoard,
+  Card,
+  GameBar,
+  CardImage,
+  Player,
+  WinBoard,
+} from "./styled";
 
 const Board = () => {
   const [gameStart, setGameStart] = useState(false);
@@ -57,11 +65,11 @@ const Board = () => {
           </Player>
         </Game>
       ) : (
-        <div>
+        <WinBoard>
           <h1>You win!</h1>
           <hr />
           <h3> It took you {count} moves</h3>
-        </div>
+        </WinBoard>
       )}
     </>
   );

@@ -28,8 +28,6 @@ const App = () => {
       const img = new Image();
       img.src = src;
     });
-
-    console.log("dziala");
   };
 
   const gameSetup = () => {
@@ -43,7 +41,6 @@ const App = () => {
       cardsArray[i].id = i;
     }
     setStart(true);
-    console.log(newCards, cardsArray);
   };
 
   return (

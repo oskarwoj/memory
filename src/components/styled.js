@@ -109,8 +109,6 @@ export const Card = styled.div`
   @media (max-width: 450px) {
     height: 70px;
     width: 70px;
-
-
   }
 
   ${({ visible }) =>
@@ -146,4 +144,16 @@ export const CardImage = styled.img`
 export const Player = styled.div`
   margin-top: 15px;
   align-self: center;
+`;
+
+export const WinBoard = styled.div`
+  font-size: 50px;
+
+  @media (max-width: 550px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 25px;
+  }
 `;
