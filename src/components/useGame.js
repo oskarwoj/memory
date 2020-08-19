@@ -5,8 +5,8 @@ const visible = [null];
 const visibleId = [null, null];
 
 const useGame = () => {
-  //   const winNumbers = Math.floor(cardsNumbers / 2);
-  const winNumbers = 8;
+  const winNumbers = Math.floor(cardsNumbers / 2);
+  // const winNumbers = 8;
 
   const [count, setCount] = useState(0);
   const [checkFirst, setCheckFirst] = useState(null);

@@ -83,7 +83,7 @@ export const GameBoard = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   margin-top: 12px;
-  transform: rotateY(180deg);
+  /* transform: rotateY(180deg); */
 
   @media (max-width: 550px) {
     justify-items: center;
@@ -98,7 +98,7 @@ export const Card = styled.div`
   rotate: (180deg);
   background-size: cover;
   background-position: center;
-  transition: all 0.2s linear;
+  transition: all 0.4s ;
 
   @media (max-width: 550px) {
     height: 100px;

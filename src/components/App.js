@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Board from "./Board";
 import { cards } from "./data";
 import { Main, Header, Button, GlobalStyle } from "./styled";
@@ -6,8 +6,31 @@ import { Main, Header, Button, GlobalStyle } from "./styled";
 export const cardsArray = [];
 export const cardsNumbers = 16;
 
+const imgs = [
+  "https://github.com/oskarwoj/memory/blob/master/src/images/blue.png?raw=true",
+  "https://github.com/oskarwoj/memory/blob/master/src/images/bullet.png?raw=true",
+  "https://github.com/oskarwoj/memory/blob/master/src/images/coin.png?raw=true",
+  "https://github.com/oskarwoj/memory/blob/master/src/images/fish.png?raw=true",
+  "https://github.com/oskarwoj/memory/blob/master/src/images/flower.png?raw=true",
+  "https://github.com/oskarwoj/memory/blob/master/src/images/monster.png?raw=true",
+  "https://github.com/oskarwoj/memory/blob/master/src/images/owl.png?raw=true",
+];
+
 const App = () => {
   const [start, setStart] = useState(false);
+
+  useEffect(() => {
+    cacheImages(imgs);
+  }, []);
+
+  const cacheImages = (srcArray) => {
+    srcArray.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+
+    console.log("dziala");
+  };
 
   const gameSetup = () => {
     const newCards = cards.slice(0, cardsNumbers);
@@ -20,6 +43,7 @@ const App = () => {
       cardsArray[i].id = i;
     }
     setStart(true);
+    console.log(newCards, cardsArray);
   };
 
   return (
