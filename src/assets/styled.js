@@ -77,6 +77,7 @@ export const Button = styled.button`
 export const Game = styled.div`
   max-width: 500px;
   width: 90vw;
+  position: absolute;
 `;
 
 export const GameBoard = styled.div`
@@ -100,7 +101,7 @@ export const Card = styled.div`
   background-size: cover;
   background-position: center;
   transition: all 0.5s;
-  
+
   @media (max-width: 550px) {
     height: 100px;
     width: 100px;
