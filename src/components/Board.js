@@ -49,7 +49,7 @@ const Board = () => {
           <Player>
             <ReactAudioPlayer
               style={{ width: "180px", height: "20px" }}
-              src="./super_mario.mp3"
+              src="https://raw.githubusercontent.com/oskarwoj/memory/master/src/music/super_mario.mp3"
               autoPlay
               controls
             />
