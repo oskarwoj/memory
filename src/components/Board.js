@@ -23,7 +23,7 @@ const Board = () => {
   const { win, visible, noClick, count, handleCardClick } = useGame();
 
   useEffect(() => {
-    preload(IMGS);
+    preload(cardsArray);
   });
 
   const gamePlay = (event) => {
@@ -56,7 +56,10 @@ const Board = () => {
                 }
               >
                 {visible[keys] && (
-                  <CardImage src={card.img} alt="card"></CardImage>
+                  <CardImage
+                    src={require(`./images/${card.url}.png`)}
+                    alt="card"
+                  ></CardImage>
                 )}
               </Card>
             ))}
