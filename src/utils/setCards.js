@@ -1,4 +1,4 @@
-import { cards } from "../data/data";
+import { cards } from "./createArray";
 import { CARDSNUMBER } from "./constants";
 import { cardsArray } from "../components/App";
 

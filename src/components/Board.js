@@ -3,7 +3,6 @@ import Display from "./Display";
 import { cardsArray } from "./App";
 import ReactAudioPlayer from "react-audio-player";
 import useGame from "../hooks/useGame";
-import { IMGS } from "../utils/constants";
 import { preload } from "../utils/preload";
 import { URL } from "../utils/constants";
 import {
