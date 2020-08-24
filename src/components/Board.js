@@ -3,7 +3,6 @@ import Display from "./Display";
 import { cardsArray } from "./App";
 import ReactAudioPlayer from "react-audio-player";
 import useGame from "../hooks/useGame";
-// import { preload } from "../utils/preload";
 import { URL } from "../utils/constants";
 import {
   Game,
@@ -18,12 +17,7 @@ import {
 const Board = () => {
   const [gameStart, setGameStart] = useState(false);
   const [time, setTime] = useState(null);
-
   const { win, visible, noClick, count, handleCardClick } = useGame();
-
-  // useEffect(() => {
-  //   preload(cardsArray);
-  // });
 
   const gamePlay = (event) => {
     if (!gameStart) {
