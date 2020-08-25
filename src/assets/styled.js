@@ -34,7 +34,7 @@ code {
 export const Main = styled.div`
   font-family: "Lato", sans-serif;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 900px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
