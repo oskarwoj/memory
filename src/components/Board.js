@@ -49,10 +49,7 @@ const Board = () => {
                 }
               >
                 {visible[keys] && (
-                  <CardImage
-                    src={require(`./images/${card.url}.png`)}
-                    alt="card"
-                  ></CardImage>
+                  <CardImage src={card.url} alt="card"></CardImage>
                 )}
               </Card>
             ))}

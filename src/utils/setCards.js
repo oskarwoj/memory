@@ -1,8 +1,7 @@
-import { cards } from "./createArray";
 import { CARDSNUMBER } from "./constants";
 import { cardsArray } from "../components/App";
 
-export const setCards = () => {
+export const setCards = (cards) => {
   const newCards = cards.slice(0, CARDSNUMBER);
 
   for (let i = 0; i < CARDSNUMBER; i++) {
