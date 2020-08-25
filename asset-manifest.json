@@ -1,31 +1,22 @@
 {
   "files": {
-    "main.js": "/memory/static/js/main.b0446e1e.chunk.js",
-    "main.js.map": "/memory/static/js/main.b0446e1e.chunk.js.map",
+    "main.js": "/memory/static/js/main.f3b9b58f.chunk.js",
+    "main.js.map": "/memory/static/js/main.f3b9b58f.chunk.js.map",
     "runtime-main.js": "/memory/static/js/runtime-main.c4984c0b.js",
     "runtime-main.js.map": "/memory/static/js/runtime-main.c4984c0b.js.map",
-    "static/js/2.cb8d3732.chunk.js": "/memory/static/js/2.cb8d3732.chunk.js",
-    "static/js/2.cb8d3732.chunk.js.map": "/memory/static/js/2.cb8d3732.chunk.js.map",
+    "static/js/2.b4385361.chunk.js": "/memory/static/js/2.b4385361.chunk.js",
+    "static/js/2.b4385361.chunk.js.map": "/memory/static/js/2.b4385361.chunk.js.map",
     "index.html": "/memory/index.html",
-    "precache-manifest.0291389d29e0c0a5492fe58a9ccda59f.js": "/memory/precache-manifest.0291389d29e0c0a5492fe58a9ccda59f.js",
+    "precache-manifest.aca0d1ec59895295c5bb865022fe68f3.js": "/memory/precache-manifest.aca0d1ec59895295c5bb865022fe68f3.js",
     "service-worker.js": "/memory/service-worker.js",
-    "static/js/2.cb8d3732.chunk.js.LICENSE.txt": "/memory/static/js/2.cb8d3732.chunk.js.LICENSE.txt",
+    "static/js/2.b4385361.chunk.js.LICENSE.txt": "/memory/static/js/2.b4385361.chunk.js.LICENSE.txt",
     "static/media/back.png": "/memory/static/media/back.093132f0.png",
-    "static/media/blue.png": "/memory/static/media/blue.0f8ed9ed.png",
-    "static/media/bullet.png": "/memory/static/media/bullet.87209d35.png",
-    "static/media/coin.png": "/memory/static/media/coin.9b7e299f.png",
-    "static/media/fish.png": "/memory/static/media/fish.4aaaa273.png",
-    "static/media/flower.png": "/memory/static/media/flower.46106653.png",
     "static/media/ipad.png": "/memory/static/media/ipad.b7cf87a3.png",
-    "static/media/ipad_small.png": "/memory/static/media/ipad_small.cebd02a7.png",
-    "static/media/monster.png": "/memory/static/media/monster.b361b260.png",
-    "static/media/owl.png": "/memory/static/media/owl.f1528406.png",
-    "static/media/star.png": "/memory/static/media/star.d7ba9204.png",
-    "static/media/wall.png": "/memory/static/media/wall.218c5751.png"
+    "static/media/ipad_small.png": "/memory/static/media/ipad_small.cebd02a7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c4984c0b.js",
-    "static/js/2.cb8d3732.chunk.js",
-    "static/js/main.b0446e1e.chunk.js"
+    "static/js/2.b4385361.chunk.js",
+    "static/js/main.f3b9b58f.chunk.js"
   ]
 }
