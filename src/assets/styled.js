@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 import { createGlobalStyle } from "styled-components";
-import background from "../components/images/ipad.png";
-import back from "../components/images/back.png";
-import backgroundSmall from "../components/images/ipad_small.png";
+import background from "./images/ipad.png";
+import back from "./images/back.png";
+import backgroundSmall from "./images/ipad_small.png";
 
 export const GlobalStyle = createGlobalStyle`
 html {
